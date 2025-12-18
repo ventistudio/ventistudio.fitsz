@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki | VentiStudio FiTsZ</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --primary: #7b61ff; --secondary: #00d4ff; --dark-bg: #0a0e27; }
+        html, body { font-family: 'Segoe UI', sans-serif; background: var(--dark-bg); color: #e0e0ff; }
+        .content { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
+        h1 { font-size: 2.5rem; background: linear-gradient(135deg, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 2rem; }
+        .wiki-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+        .wiki-card { background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 15px; padding: 1.5rem; cursor: pointer; transition: all 0.3s; }
+        .wiki-card:hover { background: rgba(123, 97, 255, 0.1); transform: translateY(-5px); }
+        .wiki-card h3 { color: var(--secondary); margin-bottom: 0.5rem; }
+        .wiki-card p { color: rgba(224, 224, 255, 0.7); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>📃 Wiki VentiStudio</h1>
+        
+        <div class="wiki-grid">
+            <div class="wiki-card">
+                <h3>🌟 Guide de démarrage</h3>
+                <p>Commencez votre aventure sur VentiStudio en 5 minutes.</p>
+            </div>
+            <div class="wiki-card">
+                <h3>🎨 Créer un profil artiste</h3>
+                <p>Configurez votre profil et commencez à partager votre art.</p>
+            </div>
+            <div class="wiki-card">
+                <h3>🎵 Publier de la musique</h3>
+                <p>Guide complet pour uploader et partager votre musique.</p>
+            </div>
+            <div class="wiki-card">
+                <h3>🔐 Sécurité et confidentialité</h3>
+                <p>Protégez votre compte et vos créations.</p>
+            </div>
+            <div class="wiki-card">
+                <h3>🤖 Utiliser Aina</h3>
+                <p>Maitriser notre assistant IA personnel.</p>
+            </div>
+            <div class="wiki-card">
+                <h3>💯 FAQ</h3>
+                <p>Questions fréquemment posées et réponses.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
