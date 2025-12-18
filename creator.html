@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Créateur | VentiStudio FiTsZ</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #7b61ff;
+            --secondary: #00d4ff;
+            --dark-bg: #0a0e27;
+            --dark-surface: #141829;
+        }
+        [data-theme="dark"] {
+            --bg: var(--dark-bg);
+            --surface: var(--dark-surface);
+            --text: #e0e0ff;
+        }
+        html, body {
+            font-family: 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(10, 14, 39, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(123, 97, 255, 0.2);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #7b61ff, #00d4ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 8rem 2rem 4rem;
+        }
+        h1 {
+            font-size: 3rem;
+            background: linear-gradient(135deg, #7b61ff, #00d4ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 2rem;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .creator-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .creator-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s;
+        }
+        .creator-card:hover {
+            background: rgba(123, 97, 255, 0.1);
+            transform: translateY(-5px);
+        }
+        .creator-card h3 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">✨ VentiStudio</a>
+            <div style="display:flex;gap:2rem;">
+                <a href="index.html" style="text-decoration:none;color:inherit;">Accueil</a>
+                <a href="creator.html" style="text-decoration:none;color:inherit;">Créateur</a>
+                <a href="contact.html" style="text-decoration:none;color:inherit;">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <h1>🎉 Programme Créateur</h1>
+        <div class="glass-card">
+            <h2 style="color:var(--secondary);margin-bottom:1rem;">Rejoignez notre écosystème</h2>
+            <p>Devenez un créateur VentiStudio et accédez à des outils exclusifs.</p>
+        </div>
+        <div class="creator-grid">
+            <div class="creator-card">
+                <h3>🎵</h3>
+                <h4>Musicien</h4>
+                <p>Partage ta musique avec le monde</p>
+            </div>
+            <div class="creator-card">
+                <h3>🎨</h3>
+                <h4>Artiste</h4>
+                <p>Expose ton art dans notre galerie</p>
+            </div>
+            <div class="creator-card">
+                <h3>📱</h3>
+                <h4>Développeur</h4>
+                <p>Crée des apps sur notre platform</p>
+            </div>
+            <div class="creator-card">
+                <h3>✍️</h3>
+                <h4>Écrivain</h4>
+                <p>Publie tes histoires et poésie</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
